@@ -1,0 +1,23 @@
+{
+    "schemaVersion": "2.2",
+    "description": "<description>",
+    "mainSteps": [
+      {
+        "action": "aws:<action>",
+        "name": "<name>",
+        "precondition": {
+          "StringEquals": [
+            "platformType",
+            "<platformname>"
+          ]
+        },
+        "inputs": {
+          "timeoutSeconds": "3600",
+          "runCommand": [
+            "# command"
+          ]
+        }
+      }
+    ]
+  }
+  
